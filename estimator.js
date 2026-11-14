@@ -210,7 +210,7 @@ const EST = (() => {
     cards.append(kpi('Burden (INT8)', `${last.int8.burden.toFixed(1)}%`, 'deployed model'),
       kpi('Burden (FP32)', `${last.fp32.burden.toFixed(1)}%`, 'reference model'),
       kpi('INT8 drift', `${last.drift.toFixed(1)} pp`, `lesion agreement ${last.agreement.toFixed(3)}`),
-      kpi('Latency', `${Math.round(last.int8.latency)} ms`, `FP32 ${Math.round(last.fp32.latency)} ms, in this browser`));
+      kpi('Browser latency', `${Math.round(last.int8.latency)} ms`, `FP32 ${Math.round(last.fp32.latency)} ms; native INT8: 68 ms`));
     const alertBox = document.createElement('div');
     shown.forEach(a => {
       const x = document.createElement('div'); x.className = `alert ${a.level}`;

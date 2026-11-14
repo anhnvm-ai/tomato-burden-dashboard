@@ -455,7 +455,7 @@ function render() {
 function radioValue(name) { return document.querySelector(`input[name="${name}"]:checked`).value; }
 
 async function initExplorer() {
-  [D, COST] = await Promise.all([fetch('data/results.json?v=20261114b').then(r => r.json()), fetch('data/cost.json?v=20261114b').then(r => r.json())]);
+  [D, COST] = await Promise.all([fetch('data/results.json?v=20261114c').then(r => r.json()), fetch('data/cost.json?v=20261114c').then(r => r.json())]);
   NETS = D.networks; DISEASES = D.diseases;
   ROWS = D.net.map((_, i) => {
     const s = D.sample[i];
