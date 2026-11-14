@@ -1,0 +1,38 @@
+{
+ "MNv4-FPN": {
+  "fp32_1t_ms": 169.953,
+  "int8_1t_ms": 68.15,
+  "int8_4t_ms": 27.807,
+  "int8_size_mb": 8.179
+ },
+ "MNv4-FPN (IN)": {
+  "fp32_1t_ms": 170.217,
+  "int8_1t_ms": 69.158,
+  "int8_4t_ms": 27.934,
+  "int8_size_mb": 8.179
+ },
+ "SegFormer-B0": {
+  "fp32_1t_ms": 531.832,
+  "int8_1t_ms": 426.831,
+  "int8_4t_ms": 173.162,
+  "int8_size_mb": 4.511
+ },
+ "U-Net (R34)": {
+  "fp32_1t_ms": 978.036,
+  "int8_1t_ms": 342.514,
+  "int8_4t_ms": 145.783,
+  "int8_size_mb": 24.704
+ },
+ "DeepLabV3+ (R50)": {
+  "fp32_1t_ms": 1187.637,
+  "int8_1t_ms": 346.157,
+  "int8_4t_ms": 122.728,
+  "int8_size_mb": 27.303
+ },
+ "LR-ASPP (MNv3)": {
+  "fp32_1t_ms": 87.322,
+  "int8_1t_ms": 63.813,
+  "int8_4t_ms": 31.096,
+  "int8_size_mb": 3.723
+ }
+}
